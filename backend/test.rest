@@ -1,0 +1,15 @@
+### PING 
+GET http://localhost:3000/ping
+
+###! DIARIES
+### GET ALL
+GET http://localhost:3000/api/diaries 
+
+### CREATE NEW
+POST http://localhost:3000/api/diaries
+Content-Type: application/json
+
+{
+  "title": "My First Diary Entry",
+  "content": "Today was a great day!"
+}
