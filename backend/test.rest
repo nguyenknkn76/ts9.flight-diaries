@@ -10,6 +10,11 @@ POST http://localhost:3000/api/diaries
 Content-Type: application/json
 
 {
-  "title": "My First Diary Entry",
-  "content": "Today was a great day!"
+  "date": "2025-07-06",
+  "weather": "sunny",
+  "visibility": "good",
+  "comment": "good stuf but scary"
 }
+
+### FIND BY ID
+GET http://localhost:3000/api/diaries/5
