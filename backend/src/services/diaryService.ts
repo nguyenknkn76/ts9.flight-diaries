@@ -27,6 +27,7 @@ const generateEntryId = () : number => {
 };
 
 const addDiary = (entry : NewDiaryEntry) : DiaryEntry => {
+  console.log(entry);
   const newDiaryEntry : DiaryEntry = {
     id: generateEntryId(),
     ...entry,

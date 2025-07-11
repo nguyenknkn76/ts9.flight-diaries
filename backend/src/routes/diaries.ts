@@ -25,6 +25,7 @@ const newDiaryParser = (req: Request, _res: Response, next: NextFunction) => {
     NewEntrySchema.parse(req.body);
     next();
   } catch (error: unknown){
+    console.log('something wrong');
     next(error);
   }
 };
