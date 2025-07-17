@@ -171,7 +171,9 @@
     "tsc": "tsc",
     "dev": "ts-node-dev src/index.ts",
     "lint": "eslint .",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "build:ui": "cd ../frontend && npm run build && copy -r dist ../backend",
+    "deploy:full": "npm run build:ui && cd .. && git add . && git commit -m uibuild && git push origin main"
   },
   "author": "",
   "license": "ISC",
