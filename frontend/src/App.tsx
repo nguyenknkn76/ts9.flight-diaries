@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
+import LoginPage from "./pages/LoginPage";
+// import { handleLogin } from "./demos/login.demo";
 
 const App = () => {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -17,6 +19,12 @@ const App = () => {
     weather:'',
     comment:'',
   });
+  
+  /*
+    ! func tests
+    console.log(import.meta.env);
+    handleLogin();
+  */
 
   useEffect(()=> {
     const fetchDiaries = async () => {
@@ -32,6 +40,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page2" element={<Page2 />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
       
       <div>

@@ -2,10 +2,12 @@ import express from 'express';
 // import path from 'path';
 import * as dotenv from 'dotenv';
 import diaryRouter from './routes/diaries';
+import { coopHeaders } from './middlewares/coopHeaders';
 // import cors from 'cors';
 
 const app = express();
 dotenv.config();
+app.use(coopHeaders);
 app.use(express.json());
 // app.use(cors());
 app.use(express.static('dist'));
