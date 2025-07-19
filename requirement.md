@@ -17,5 +17,6 @@ redirected lại về https://abc.com/page1 để xem được nội dung trang 
 
 - flight-diaries
   - backend
+    - dist
   - frontend
     - dist
