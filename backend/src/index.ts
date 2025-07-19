@@ -28,6 +28,5 @@ app.use('/api/diaries', diaryRouter);
 
 app.listen(PORT, ()=>{
   console.log(`Server is running on port ${PORT}`);
-  console.log(`test api: http://localhost:3000/api/diaries`);
   console.log(`test url: http://localhost:3000`);
 });
